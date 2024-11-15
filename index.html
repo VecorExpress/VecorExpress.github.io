@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--Roboto-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet">
+<!--Poppins-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!--Charset-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!----Bootstrap---->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<!-----Favicon---->
+<title>Vecor</title>
+<link rel="icon" href="images/favicon.png" type="image/png">
+<link rel="fondo" href="images/Fondo-Vecor 1" type="image/png">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;}
+</style>
+<style>
+body {
+    background-image: url('images/Fondo-Vecor.png');
+    background-repeat: no-repeat ;}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Vecor Logo">
+            </div>
+            <div class="topnav">
+                <input type="text" placeholder="Buscar producto">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#funcionamiento">¿Cómo funciona?</a></li>
+                    <li><a href="#eligenos">¿Por qué elegirnos?</a></li>
+                    <li><a href="#categorias">Productos</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="sub-nav">
+            <ul>
+                <li><a href="#">Cemento</a></li>
+                <li><a href="#">Ladrillo</a></li>
+                <li><a href="#">Drywall</a></li>
+                <li><a href="#">Tubos</a></li>
+                <li><a href="#">Fierro</a></li>
+                <li><a href="#">Pinturas</a></li>
+                <li><a href="#">Herramientas</a></li>
+                <li><a href="#">Cobertura</a></li>
+                <li><a href="#">Tanques y Cisternas</a></li>
+                <li><a href="#">Aditivos</a></li>
+            </ul>
+        </div>
+    </header>
+<!-----Formulario---->
+    <div class="form-wrapper" id="wrapper">
+
+        <div class="form-container" id="formulario">
+        <h2>COMPRA TUS <br> MATERIALES SIN <br> SALIR DE CASA</h2>
+        <form onsubmit="return sendMessage()">
+            <!-- Nombres -->
+            <label for="name">Nombres</label>
+            <input type="text" id="name" name="name" placeholder="Ingresar nombres y apellidos" required>
+            <!-- Teléfono -->
+            <label for="phone">Nro. Celular</label>
+            <div class="phone-input">
+                <input type="number" id="phone" name="phone" maxlength="10" inputmode="numeric" pattern="[0-9]{9}" placeholder="999 999 999" required>
+            </div>
+            <!-- DNI - PASS - RUC -->
+            <label for="document">Documento de identidad</label>
+            <div class="document-input">
+                <select id="document" name="document_type" required>
+                    <option value="DNI">DNI</option>
+                    <option value="Passport">Pasaporte</option>
+                    <option value="RUC">RUC</option>
+                </select>
+                <input type="number" id="document_id" name="document_id" placeholder="12345678" required>
+            </div>
+            <!-- Distritos -->
+            <label for="location">Ubicación</label>
+            <select id="location" name="location" required>
+                <option value="" disabled selected>Seleccionar provincia</option>
+                <option value="Amazonas">Amazonas</option>
+                <option value="Áncash">Áncash</option>
+                <option value="Apurímac">Apurímac</option>
+                <option value="Arequipa">Arequipa</option>
+                <option value="Ayacucho">Ayacucho</option>
+                <option value="Cajamarca">Cajamarca</option>
+                <option value="Callao">Callao</option>
+                <option value="Cusco">Cusco</option>
+                <option value="Huancavelica">Huancavelica</option>
+                <option value="Huánuco">Huánuco</option>
+                <option value="Ica">Ica</option>
+                <option value="Junín">Junín</option>
+                <option value="La Libertad">La Libertad</option>
+                <option value="Lambayeque">Lambayeque</option>
+                <option value="Lima">Lima</option>
+                <option value="Loreto">Loreto</option>
+                <option value="Madre de Dios">Madre de Dios</option>
+                <option value="Moquegua">Moquegua</option>
+                <option value="Pasco">Pasco</option>
+                <option value="Piura">Piura</option>
+                <option value="Puno">Puno</option>
+                <option value="San Martín">San Martín</option>
+                <option value="Tacna">Tacna</option>
+                <option value="Tumbes">Tumbes</option>
+                <option value="Ucayali">Ucayali</option>
+            </select>
+            <!-- Consultas -->
+            <label for="query">Consulta</label>
+            <textarea id="query" name="query" placeholder="Ingresar lista de materiales a consultar . . ." required></textarea>
+            <!-- Checkbox o como se diga -->
+            <div class="terms">
+                <input type="checkbox" id="terms" name="terms" class="custom-checkbox" required>
+                <label for="terms" class="terms-label">Acepto términos, condiciones y las políticas de privacidad</label>
+            </div>
+            <!-- Enviar -->
+            <button type="submit" class="formButton">Enviar</button>
+        </form>
+    </div>
+    <script>
+        function sendMessage() {
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const documentType = document.getElementById('document').value;
+            const documentId = document.getElementById('document_id').value;
+            const location = document.getElementById('location').value;
+            const query = document.getElementById('query').value;
+            const termsAccepted = document.getElementById('terms').checked;
+            if (!termsAccepted) {
+                alert('Por favor, acepte los términos y condiciones.');
+                return false;
+            }
+            const defaultMessage = `¡Hola Vecor! Mi nombre es ${name} y mi numero de teléfono es ${phone}, me identifico con ${documentType} ${documentId} y actualmente resido en ${location}, Quisiera ordenar los siguientes materiales: ${query}`;
+            const fixedPhoneNumber = '+51936650075';
+            const url = `https://wa.me/${fixedPhoneNumber}?text=${encodeURIComponent(defaultMessage)}`;
+            window.open(url, '_blank');
+            return false; 
+        }
+    </script>
+
+
+    <!--Sección del ahorro-->
+    <section class="ahorro">
+        <div class="content">
+            <img src="images/Productos.png" class="product-image">
+            <img src="images/arrow.png" class="arrow-image">
+            <div class="s-text">
+                <h2>PRECIAZOS DEL AHORRO</h2>
+                <p>Entendemos el valor de ofrecerte lo <br>mejor para tu construcción</p>
+            </div>
+        </div>
+    </section>
+    <style>
+
+    </style>
+    <style>
+
+    </style>
+    <section class="promociones">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex">
+                        <img src="images/promo1.png" class="d-block w-33" alt="promo1">
+                        <img src="images/promo2.png" class="d-block w-33" alt="promo2">
+                        <img src="images/promo3.png" class="d-block w-33" alt="promo3">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex">
+                        <img src="images/promo4.png" class="d-block w-33" alt="promo4">
+                        <img src="images/promo5.png" class="d-block w-33" alt="promo5">
+                        <img src="images/promo6.png" class="d-block w-33" alt="promo6">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!--Introducción al catálogo-->
+    <section class="int-catalog">
+        <div class="cont-catalog">
+            <div class="c-text">
+                <h2>CATÁLOGO DIGITAL</h2>
+                <p>Conoce todos nuestros productos</p>
+            </div>
+            <div class="cat-button">
+                <a href="catalog.php">Ver más productos</a>
+            </div>
+        </div>
+    </section>
+    <!--Sección de funcionamiento-->
+    <section class="funcionamiento" id="funcionamiento">
+        <div class="func-content">
+            <img src="images/mano-wasap.png" class="hand">
+            <img src="images/1paso.png" class="step1">
+            <img src="images/2paso.png" class="step2">
+            <img src="images/3paso.png" class="step3">
+        </div>
+        <div class="func-text">
+            <h2>¿Cómo realizar <br> tu pedido?</h2>
+        </div>
+    </section>
+    <!--Sección del por que vecor-->    
+    <section class="why-vecor" id="eligenos">
+        <h2>¿Por qué elegir VECOR?</h2>
+        <div class="features">
+            <div class="feature-box">
+                <img src="images/star-icon.png" class="trust-icon" alt="Trust icon">
+                <p class="feature-text">Nos hemos ganado la confianza tras 25 años en el rubro</p>
+            </div>
+            <div class="feature-box">
+                <img src="images/clock-icon.png" alt="logistics-icon">
+                <p class="feature-text">La logística que tenemos nos permite ser ágiles en tiempo de respuesta</p>
+            </div>
+            <div class="feature-box">
+                <img src="images/phone-icon.png" alt="consultation-icon">
+                <p class="feature-text">Asesoramos lo que es mejor para tu <br> construcción</p>
+            </div>
+            <div class="feature-box">
+                <img src="images/cart-icon.png" alt="brands-icon">
+                <p class="feature-text">Solo trabajamos con marcas reconocidas en este rubro</p>
+            </div>
+        </div>
+    </section>
+    <!--Categorías (Por terminar)-->
+    <section class="categorias" id="categorias">
+        <h2>Principales Categorías</h2>
+        <div class="cat-content">
+            <img src="images/cemento.png" class="cemento">
+            <img src="images/ladrillo.png" class="ladrillo">
+            <img src="images/drywall.png" class="drywall">
+            <img src="images/tubos.png" class="tubos">
+            <img src="images/fierro.png" class="fierro">
+            <img src="images/pinturas.png" class="pinturas">
+            <img src="images/herramientas.png" class="herramientas">
+            <img src="images/cobertura.png" class="cobertura">
+            <img src="images/tanques.png" class="tanques">
+            <img src="images/aditivos.png" class="cisternas">
+        </div>
+    </section>
+<!--Eventos (Como sugerencia un formulario para enviar correo y recibir notis rel con los eventos)-->
+    <section class="eventos" id="eventos">
+        <div class="event-content">
+            <img src="images/eventos.png">
+            <h2>Nuestros <br> Eventos</h2>
+            <p>Entérate de nuestras actividades,<br> novedades, eventos y mucho más de <br> Vecor.
+        </div>
+    </section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<footer>
+    <div class="footer-content">
+        <img src="images/footer.png" class="footer-pic">
+        <img src="images/footer-location.png" class="footer-location">
+        <img src="images/footer-clock.png" class="footer-clock">
+        <p class="socialmedia">Contáctanos por nuestros canales de venta o <br> acercate a tu tienda VECOR más cercana.</p>
+        <p class="dirección">Urb. Casuarinas Mz. A1 Lt. 4
+        AA.HH. Villa San Luis Mz. D1 Lt. 7</p>  
+    </div>
+</footer>
+</html>
