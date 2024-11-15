@@ -1,0 +1,550 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: transparent;
+    overflow-x: hidden;
+    width: 100%;
+    padding-top: 100px;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #113896;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+}
+
+.logo img {
+    max-height: 50px;
+    position: relative;
+}
+/*navegador*/
+.topnav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 50px;
+    border-radius: 5px;
+    margin-top: 0px;
+}
+
+.topnav input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    background-color: #f6f6f6;
+    outline: none;
+    border: 2px solid transparent;
+    transition: border-color 0.1s ease;
+    color: #113896;
+}
+
+.topnav input[type="text"]:hover {
+    border-color: #113896;
+}
+
+.topnav input[type="text"]:focus {
+    border-color: #113896; 
+    outline: none;
+}
+
+.topnav input[type="text"]:focus::placeholder {
+    color: transparent;
+}
+
+.topnav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: -35px;
+    margin-bottom: 10px;
+    color: #808080;
+}
+
+/* Navegador principal */
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-right: 20px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #113896;
+    font-weight: bold;
+}
+
+/* Sub-navegador */
+.sub-nav {
+    background-color: #113896;
+    padding: 10px 25px;
+}
+
+.sub-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sub-nav ul li {
+    margin-right: 20px;
+}
+
+.sub-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 0;
+}
+
+.worker img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Formulario */
+.form-container {
+    background-image: url(images/Group\ 1049.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+    background-color: #ffc300;;
+    padding: 2rem;
+    width: 460px; /* Increased width */
+    height: 760px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: start;
+    margin-left: 800px;
+    margin-bottom: 15px;
+    padding-top: 0px;
+}
+
+.form-container h2 {
+    color: #ffffff;
+    background-color: #113896;
+    padding: 1.9rem;
+    margin: -2rem -2rem -1rem -2rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 33px;
+}
+    
+#wrapper {
+    width: 100%;
+    height: 842px;
+    margin-top: 75px;
+}
+
+label {
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 4px 0 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #D0D0D0;
+    border-radius: 4px;
+    color: #6E7378;
+    font-family: "Roboto", sans-serif;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    border-radius: 8px;
+}
+
+.phone-input .flag {
+    margin-right: 0.5rem;
+}
+
+.document-input {
+    display: flex;
+}
+
+.document-input select {
+    width: 26%;
+    margin-right: 0.5rem;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 1rem;
+}
+
+.terms .custom-checkbox {
+    display: none;
+}
+
+.terms .terms-label {
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+.terms .terms-label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    background-color: #FFD700;
+}
+
+.terms .custom-checkbox:checked + .terms-label::before {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.terms .custom-checkbox:checked + .terms-label::after {
+    content: '✔';
+    position: absolute;
+    text-align: center;
+    color: #0057b7;
+    font-size: 14px;
+    font-weight: bold;
+    left: 3px;
+    top: -2px;
+}
+
+.formButton {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #113896;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formButton:hover {
+    transition: 0.2 ease;
+    background-color: #1751d6;
+}
+/* Sección */
+.promociones{
+    background-color: #ffc300;
+    width: flex;
+    height: 500px;
+    padding-top: 0px;
+}
+.promos{
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    margin-left: 100px;
+}
+.carousel {
+    padding-top: 50px;
+    padding-left: 100px;
+    max-width: 100%; 
+    margin: 0 auto;
+}
+.carousel-item img {
+    height: 400px; 
+    width: 400px;
+    margin: 0 10px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+.ahorro {
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.ahorro .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-image {
+    max-width: 370px; /* Adjust width to fit your layout */
+    margin-right: 20px;
+}
+.arrow-image{
+    margin-right: 50px;
+    height: fit-content;
+}
+.s-text {
+    text-align: left;
+}
+
+.s-text h2 {
+    color: #113896;
+    font-size: 40px;
+    margin: 0;
+    font-family: "Poppins" !important;
+    font-weight: 700;
+}
+
+.s-text p {
+    color: #113896;
+    font-size: 20px;
+    margin-top: 5px;
+}
+/*Invitación al catálogo*/
+.int-catalog {
+    background-image: url(images/cat-rectangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 290px;
+}
+.c-text {
+    text-align: start;
+    padding-top: 50px;
+    padding-left: 670px;
+}
+.c-text h2{
+    color: #fff;
+    font-size: 40px;
+    font-family: "Poppins" !important;
+    font-weight: bold;
+}
+.c-text p {
+    color: #fff;
+    font-size: 20px;
+}
+.cat-button{
+    width: 240px;
+    height: 60px;
+    padding: 0.75rem;
+    background-color: #fff;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 670px;
+}
+.cat-button a {
+    text-decoration: none;
+    color: #113896;
+    font-size: 24px;
+}
+/* Apartado de funcionamiento*/
+.funcionamiento{
+    width: flex;
+    height: 56rem;
+    background-image: url(images/fondito.jpg);
+    background-size: cover;
+    background-color: #ffc300;
+}
+.func-content img{
+    position: absolute;
+}
+
+.hand {
+    padding-top: 115px;
+    padding-left: 200px;
+    z-index: 1;
+}
+.step1{
+    padding-top: 70px;
+    padding-left: 920px;
+    z-index: 1;
+}
+.step2{
+    padding-top: 400px;
+    padding-left: 110px;
+}
+.step3{
+    padding-top: 480px;
+    padding-left: 980px;
+    z-index: 1;
+}
+.func-text h2{
+    color: #113896;
+    padding-top: 110px;
+    padding-left: 110px;
+    margin: 0px;
+    font-family: "Poppins" !important;
+    font-size: 60px;
+    font-weight: 800;
+    position: absolute;
+}
+/*razones*/
+.why-vecor {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+}
+.why-vecor h2{
+    position: absolute;
+    color: #113896;
+    font-family: "Poppins" !important; 
+    font-size: 56px;
+    font-weight: 700;
+    padding-left: 400px;
+    padding-top: 50px;
+}
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+.feature-box {
+    background-color: #0a2f92;
+    padding: 20px;
+    width: 260px;
+    height: 260px;
+    text-align: center;
+}
+.feature-box img {
+    width: 90px;
+    height: 100px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+.feature-text {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+    font-family: "Poppins" !important;
+    font-weight: 500;
+}
+/*Sección de categorias . (Por terminar)*/
+.categorias{
+    height: 1219px;
+    background-image: url(images/civil-building.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.categorias h2{
+    position: absolute;
+    color: #ffc300;
+    font-family: "Poppins" !important; 
+    font-size: 56px;
+    font-weight: 700;
+    padding-left: 450px;
+    padding-top: 150px;
+    text-align: center;
+}
+.cat-content {
+    padding-top: 270px;
+    padding-left: 90px;
+    gap: 20px;
+}
+.cat-content img {
+    margin-bottom: 5px;
+    padding-top: 50px;
+}
+/*Eventos*/
+.eventos{
+    height: 1057px;
+    background-image: url(images/eventosfondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.event-content img{
+    position: absolute;
+    padding-top: 100px;
+    padding-left: 700px; 
+}
+.event-content h2{
+    position: absolute;
+    padding-top: 100px;
+    padding-left: 100px;
+    font-size: 60px;
+    font-family: "Poppins" !important;
+    font-weight: bold;
+    color: #113896;
+}
+.event-content p{
+    position: absolute;
+    padding-top: 280px;
+    padding-left: 100px;
+    font-size: 20px;
+    font-family: "Poppins" !important;
+    color: #113896;
+}
+/*Footer*/
+footer{
+    background-color: #19337d;
+    width: 100%;
+    height: fit-content;
+    padding-top: 0px;;
+}
+.footer-content p{
+    font-family: "Poppins" !important;
+    color: #fff;
+    padding-left: 20px;
+}
+.footer-pic{
+    width: 100%;
+}
+.footer-location{
+    position: absolute;
+    padding-left: 100px;
+    color: #fff;
+    font-size: 16px;
+}
+.footer-clock{
+    padding-left: 120px;
+    padding-top: 40px;
+}
+.socialmedia{
+    text-align: start;
+    padding-left: 120px;;
+    font-size: 16px;
+}
+.direccion{
+    position: absolute;
+    padding-left: 120px;
+    color: #fff;
+    font-size: 16px;
+}
